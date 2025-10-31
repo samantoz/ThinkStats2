@@ -7,6 +7,7 @@ A project to practice statistical concepts and code examples from the ThinkStats
 - [Overview](#overview)
 - [Installation](#installation)
 - [Selecting the Python Interpreter](#selecting-the-python-interpreter)
+- [Select the Notebook Kernel](#select-the-notebook-kernel)
 - [Project Structure](#project-structure)
 - [Chapters](#chapters)
   - [Chapter 1: Exploratory Data Analysis](#chapter-1-exploratory-data-analysis)
@@ -54,9 +55,13 @@ In this step you need to point VS Code to the Python executable that Poetry crea
 
 1. Open the Command Palatte: `Ctrl+Shift+P`.
 2. Type `Python: Select Interpreter` and press Enter.
-3. A list of avaialable Python interpreters will appear. Look for an interpreter that is labeled with the "Poetry" environment created for your project, which will typically point to the path inside a `.venv` directory. If you do not see it you can always `Browse` into it.
+3. A list of avaialable Python interpreters will appear. Look for an interpreter that is labeled with the "Poetry" environment created for your project, which will typically point to the path inside a `.venv` directory. If you do not see it you can always `Browse` into it. (".venv/bin/python")
 
 ## Select the Notebook Kernel
+When you open the notebook, VS Code needs to know which Python environment (kernel) to use.
+1. In the top-right corner of the notebook editor, click on "Select Kernel".
+2. You will see a similar list of interpreters.
+3. Choose the same Poetry environment you selected in Step 3 above.
 
 ## Project Structure
 
@@ -64,7 +69,7 @@ In this step you need to point VS Code to the Python executable that Poetry crea
 practice/
 ├── code/           # Practice scripts and notebooks
 ├── data/           # Datasets (if any)
-├── notebooks/      # Jupyter notebooks
+|── src/            # source modules
 ├── tests/          # Unit tests
 └── utils/          # Utility functions
 ```
