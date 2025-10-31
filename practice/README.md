@@ -6,6 +6,7 @@ A project to practice statistical concepts and code examples from the ThinkStats
 
 - [Overview](#overview)
 - [Installation](#installation)
+- [Selecting the Python Interpreter](#selecting-the-python-interpreter)
 - [Project Structure](#project-structure)
 - [Chapters](#chapters)
   - [Chapter 1: Exploratory Data Analysis](#chapter-1-exploratory-data-analysis)
@@ -47,6 +48,15 @@ poetry shell
 # Or run commands directly
 poetry run python your_script.py
 ```
+
+## Selecting the Python Interpreter
+In this step you need to point VS Code to the Python executable that Poetry created for your project.
+
+1. Open the Command Palatte: `Ctrl+Shift+P`.
+2. Type `Python: Select Interpreter` and press Enter.
+3. A list of avaialable Python interpreters will appear. Look for an interpreter that is labeled with the "Poetry" environment created for your project, which will typically point to the path inside a `.venv` directory. If you do not see it you can always `Browse` into it.
+
+## Select the Notebook Kernel
 
 ## Project Structure
 
